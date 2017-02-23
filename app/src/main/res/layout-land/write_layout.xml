@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".CustomGesturesActivity">
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="@color/black"-->
+        <!--android:id="@+id/view"/>-->
+
+    <LinearLayout
+        android:layout_width="@dimen/write_land_button_width"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linr1">
+
+        <Button
+            android:id="@+id/goto_page_write"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:drawableTop="@drawable/goto_icon"
+            android:minHeight="100dp"
+            android:text="@string/go_to_page"
+            android:padding="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="true" />
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:background="@color/blue" />-->
+
+
+        <Button
+            android:id="@+id/repeat_write"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="0dp"
+            android:drawableTop="@drawable/repeat_icon"
+            android:text="@string/repeat"
+            android:layout_weight="1"
+            android:textAllCaps="true" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:background="@color/blue" />-->
+
+        <Button
+            android:id="@+id/help_write"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:drawableTop="@drawable/help_icon"
+            android:padding="0dp"
+            android:text="@string/help"
+            android:layout_weight="1"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+    <View
+    android:layout_width="2dp"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+        android:layout_toRightOf="@+id/linr1"
+
+    android:id="@+id/view"/>
+
+
+    <LinearLayout
+        android:id="@+id/linr2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/view"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/leftslide"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/left" />
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/writeletterpager"
+            android:layout_width="@dimen/shown_letter_size"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+        <ImageButton
+            android:id="@+id/rightslide"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linr3"
+        android:layout_width="@dimen/gestureview_size"
+        android:layout_height="match_parent"
+
+        android:layout_toRightOf="@+id/linr2">
+
+        <android.gesture.GestureOverlayView
+            android:id="@+id/gOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gestureColor="#cccccc"
+            android:gestureStrokeType="multiple"
+            android:uncertainGestureColor="#ff0000"></android.gesture.GestureOverlayView>
+    </LinearLayout>
+
+
+</RelativeLayout>

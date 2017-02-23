@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context="com.example.aforapple.test.Level1Activity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/buttonll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/score_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/score_icon"
+            android:text="Score"
+            android:textAllCaps="true" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue" />
+
+        <Button
+            android:id="@+id/restart_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/restart_icon"
+            android:text="Restart"
+            android:textAllCaps="true" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue" />
+
+        <Button
+            android:id="@+id/finish_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/finish_icon"
+            android:text="Finish"
+            android:textAllCaps="true" />
+
+
+        <View
+            android:id="@+id/extraview"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+
+        <Button
+            android:id="@+id/pause_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/pause_icon"
+            android:text="Pause"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:text="@string/select_correct_answer" />
+
+    <TextView
+        android:id="@+id/timertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="end"
+        android:textSize="@dimen/button_text_size"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/quesImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/background" />
+
+    <TextView
+        android:id="@+id/for_letter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:text="for"
+        android:textSize="@dimen/button_text_size"
+        android:textStyle="bold|italic" />
+
+
+    <LinearLayout
+        android:id="@+id/optnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/optnImage1"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+
+        <ImageButton
+            android:id="@+id/optnImage2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optnlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/optnImage3"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+
+        <ImageButton
+            android:id="@+id/optnImage4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="30dp"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

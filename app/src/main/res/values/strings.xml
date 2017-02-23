@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">AlphaMaster</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="repeat">Repeat</string>
+    <string name="go_to_page">Go to</string>
+    <string name="help">Help</string>
+
+    <string name="home">Home</string>
+    <string name="learn">Learn</string>
+    <string name="write">Write</string>
+    <string name="test">Test</string>
+
+    <string name="level_1">Level 1!!!</string>
+    <string name="level_2">Level 2!!!</string>
+
+    <string name="select_level">    Please select a level to play!!!</string>
+    <string name="select_correct_answer">Please select the correct option!!!</string>
+
+    <string name="your_best">Your best is!!! </string>
+
+    <string name="help_main">Click on letter to listen and view. \n\n To learn word click on Learn. \n\n For writing practice click on Write. \n\n To take test click on Test.</string>
+    <string name="help_learn">Turn page to learn new word.</string>
+    <string name="help_main_write">Write the shown letter. </string>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Learn</item>
+        <item >Write</item>
+        <item >Test</item>
+        <item >Rate Us</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/home_icon</item>
+        <item>@drawable/learn_icon</item>
+        <item>@drawable/write_icon</item>
+        <item>@drawable/test_icon</item>
+        <item>@drawable/rateus</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+</resources>

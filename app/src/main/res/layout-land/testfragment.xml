@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_landscape"
+        android:gravity="center"
+        android:text="@string/select_level" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_landscape">
+
+        <Button
+            android:id="@+id/level1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin_landscape"
+            android:paddingRight="@dimen/activity_horizontal_margin_landscape"
+            android:text="@string/level_1"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="32dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+
+            <ImageView
+                android:id="@+id/best1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/best" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/level1score"
+                android:hint="highscore"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_landscape">
+
+        <Button
+            android:id="@+id/level2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin_landscape"
+            android:paddingRight="@dimen/activity_horizontal_margin_landscape"
+            android:text="@string/level_2"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="32dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+
+            <ImageView
+                android:id="@+id/best2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/best" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/level2score"
+                android:hint="highscore"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
